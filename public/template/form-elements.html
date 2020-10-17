@@ -1,0 +1,880 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+        <title>Urora - Responsive Bootstrap 4 Admin Dashboard</title>
+        <meta content="Admin Dashboard" name="description" />
+        <meta content="Mannatthemes" name="author" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+        <link rel="shortcut icon" href="assets/images/favicon.ico">
+
+        <link href="assets/plugins/animate/animate.css" rel="stylesheet" type="text/css">
+        <link href="assets/css/bootstrap-material-design.min.css" rel="stylesheet" type="text/css">
+        <link href="assets/css/icons.css" rel="stylesheet" type="text/css">
+        <link href="assets/css/style.css" rel="stylesheet" type="text/css">
+
+    </head>
+
+
+    <body>
+
+        <!-- Loader -->
+        <div id="preloader"><div id="status"><div class="spinner"></div></div></div>
+
+        <!-- Navigation Bar-->
+        <header id="topnav">
+            <div class="topbar-main">
+                <div class="container-fluid">
+
+                    <!-- Logo container-->
+                    <div class="logo">
+                        <!-- Text Logo -->
+                        <!--<a href="index.html" class="logo">-->
+                        <!--Urora-->
+                        <!--</a>-->
+                        <!-- Image Logo -->
+                        <a href="index.html" class="logo">
+                            <img src="assets/images/logo-sm.png" alt="" height="50" class="logo-small">
+                            <img src="assets/images/logo-h-lg.png" alt="" class="logo-large">
+                        </a>
+
+                    </div>
+                    <!-- End Logo container-->
+
+
+                    <div class="menu-extras topbar-custom">
+                        
+                        <ul class="list-inline float-right mb-0 ">
+                            <!-- language-->
+
+                            <li class="list-inline-item dropdown notification-list">
+                                <div class="list-inline-item hide-phone app-search">
+                                    <form role="search" class="">
+                                        <div class="form-group pt-1"> 
+                                            <input type="text" class="form-control" placeholder="Search..">
+                                            <a href=""><i class="fa fa-search"></i></a>
+                                        </div>
+                                    </form>
+                                </div>   
+                            </li>
+                            <li class="list-inline-item dropdown notification-list">
+                                <a class="nav-link dropdown-toggle arrow-none waves-effect" data-toggle="dropdown" href="#" role="button"
+                                    aria-haspopup="false" aria-expanded="false">
+                                    <i class="ti-email noti-icon"></i>
+                                    <span class="badge badge-danger heartbit  noti-icon-badge">5</span>
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-right dropdown-arrow dropdown-menu-lg">
+                                    <!-- item-->
+                                    <div class="dropdown-item noti-title align-self-center">
+                                        <h5><span class="badge badge-danger float-right">745</span>Messages</h5>
+                                    </div>
+
+                                    <!-- item-->
+                                    <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                        <div class="notify-icon"><img src="assets/images/users/avatar-2.jpg" alt="user-img" class="img-fluid rounded-circle" /> </div>
+                                        <p class="notify-details"><b>Charles M. Jones</b><small class="text-muted">Dummy text of the printing and typesetting industry.</small></p>
+                                    </a>
+
+                                    <!-- item-->
+                                    <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                        <div class="notify-icon"><img src="assets/images/users/avatar-3.jpg" alt="user-img" class="img-fluid rounded-circle" /> </div>
+                                        <p class="notify-details"><b>Thomas J. Mimms</b><small class="text-muted">You have 87 unread messages</small></p>
+                                    </a>
+
+                                    <!-- item-->
+                                    <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                        <div class="notify-icon"><img src="assets/images/users/avatar-4.jpg" alt="user-img" class="img-fluid rounded-circle" /> </div>
+                                        <p class="notify-details"><b>Luis M. Konrad</b><small class="text-muted">It is a long established fact that a reader will</small></p>
+                                    </a>
+
+                                    <!-- All-->
+                                    <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                        View All
+                                    </a>
+
+                                </div>
+                            </li>
+
+                            <li class="list-inline-item dropdown notification-list">
+                                <a class="nav-link dropdown-toggle arrow-none waves-effect" data-toggle="dropdown" href="#" role="button"
+                                    aria-haspopup="false" aria-expanded="false">
+                                    <i class="ti-bell noti-icon"></i>
+                                    <span class="badge badge-success a-animate-blink noti-icon-badge">3</span>
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-right dropdown-arrow dropdown-menu-lg">
+                                    <!-- item-->
+                                    <div class="dropdown-item noti-title">
+                                        <h5><span class="badge badge-danger float-right">87</span>Notification</h5>
+                                    </div>
+
+                                    <!-- item-->
+                                    <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                        <div class="notify-icon bg-primary"><i class="mdi mdi-cart-outline"></i></div>
+                                        <p class="notify-details"><b>Your order is placed</b><small class="text-muted">Dummy text of the printing and typesetting industry.</small></p>
+                                    </a>
+
+                                    <!-- item-->
+                                    <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                        <div class="notify-icon bg-success"><i class="mdi mdi-message"></i></div>
+                                        <p class="notify-details"><b>New Message received</b><small class="text-muted">You have 87 unread messages</small></p>
+                                    </a>
+
+                                    <!-- item-->
+                                    <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                        <div class="notify-icon bg-warning"><i class="mdi mdi-martini"></i></div>
+                                        <p class="notify-details"><b>Your item is shipped</b><small class="text-muted">It is a long established fact that a reader will</small></p>
+                                    </a>
+
+                                    <!-- All-->
+                                    <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                        View All
+                                    </a>
+
+                                </div>
+                            </li>
+                            <li class="list-inline-item dropdown notification-list">
+                                <div class="dropdown notification-list nav-pro-img">
+                                    <a class="dropdown-toggle nav-link arrow-none waves-effect nav-user" data-toggle="dropdown" href="#" role="button"
+                                        aria-haspopup="false" aria-expanded="false">
+                                        <img src="assets/images/users/avatar-3.jpg" alt="user" class="rounded-circle">
+                                    </a>
+                                    <div class="dropdown-menu dropdown-menu-right profile-dropdown ">
+                                        <!-- item-->
+                                        <div class="dropdown-item noti-title">
+                                            <h5>Welcome</h5>
+                                        </div>
+                                        <a class="dropdown-item" href="#"><i class="mdi mdi-account-circle m-r-5 text-muted"></i> Profile</a>
+                                        <a class="dropdown-item" href="#"><i class="mdi mdi-wallet m-r-5 text-muted"></i> My Wallet</a>
+                                        <a class="dropdown-item d-block" href="#"><span class="badge badge-success float-right">5</span><i class="mdi mdi-settings m-r-5 text-muted"></i> Settings</a>
+                                        <a class="dropdown-item" href="#"><i class="mdi mdi-lock-open-outline m-r-5 text-muted"></i> Lock screen</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" href="#"><i class="mdi mdi-logout m-r-5 text-muted"></i> Logout</a>
+                                    </div>                                                                    
+                                </div>
+                            </li>
+                            <li class="menu-item list-inline-item">
+                                <!-- Mobile menu toggle-->
+                                <a class="navbar-toggle nav-link" id="mobileToggle">
+                                    <div class="lines">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </div>
+                                </a>
+                                <!-- End mobile menu toggle-->
+                            </li>    
+                        </ul> 
+                        
+                    </div>
+                    <!-- end menu-extras -->
+
+                    <div class="clearfix"></div>
+
+                </div> <!-- end container -->
+            </div>
+            <!-- end topbar-main -->
+
+            <!-- MENU Start -->
+            <div class="navbar-custom">
+                <div class="container-fluid">
+                    <div id="navigation">
+                        <!-- Navigation Menu-->
+                        <ul class="navigation-menu text-center">
+
+                            <li class="has-submenu ">
+                                <a href="index.html"><i class="mdi mdi-view-dashboard"></i>Dashboard</a>
+                            </li>
+                            
+
+                            <li class="has-submenu ">
+                                <a href="calendar.html"><i class="mdi mdi-calendar-clock"></i>Calendar</a>
+                                
+                            </li>
+
+                            <li class="has-submenu">
+                                <a href="#"><i class="mdi mdi-animation"></i>User Interface</a>
+                                <ul class="submenu megamenu">
+                                    <li>
+                                        <ul>
+                                            <li><a href="ui-badge.html">Badge</a></li>
+                                            <li><a href="ui-alertify.html">Alertify</a></li>
+                                            <li><a href="ui-buttons.html">Buttons</a></li>
+                                            <li><a href="ui-carousel.html">Carousel</a></li>
+                                            <li><a href="ui-dropdowns.html">Dropdowns</a></li>
+                                            <li><a href="ui-typography.html">Typography</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <ul>
+                                            <li><a href="ui-cards.html">Cards</a></li>
+                                            <li><a href="ui-grid.html">Grid</a></li>
+                                            <li><a href="ui-rating.html">Rating</a></li>                                            
+                                            <li><a href="ui-modals.html">Modals</a></li>
+                                            <li><a href="ui-images.html">Images</a></li>
+                                            <li><a href="ui-tabs-accordions.html">Tabs &amp; Accordions</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <ul>
+                                            <li><a href="ui-navs.html">Navs</a></li>
+                                            <li><a href="ui-alerts.html">Alerts</a></li>                                                                                          
+                                            <li><a href="ui-pagination.html">Pagination</a></li>
+                                            <li><a href="ui-rangeslider.html">Range Slider</a></li>
+                                            <li><a href="ui-progressbars.html">Progress Bars</a></li> 
+                                            <li><a href="ui-popover-tooltips.html">Popover & Tooltips</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li class="has-submenu">
+                                <a href="#"><i class="mdi mdi-cards"></i>Components</a>
+                                <ul class="submenu">
+                                    <li class="has-submenu">
+                                        <a href="#">Forms</a>
+                                        <ul class="submenu">
+                                            <li><a href="form-elements.html">Form Elements</a></li>
+                                            <li><a href="form-validation.html">Form Validation</a></li>
+                                            <li><a href="form-advanced.html">Form Advanced</a></li>
+                                            <li><a href="form-mask.html">Form Mask</a></li>
+                                            <li><a href="form-editors.html">Form Editors</a></li>
+                                            <li><a href="form-uploads.html">Form File Upload</a></li>                                            
+                                        </ul>
+                                    </li>
+                                    
+                                    <li class="has-submenu">
+                                        <a href="#">Charts</a>
+                                        <ul class="submenu">
+                                            <li><a href="charts-morris.html">Morris Chart</a></li>
+                                            <li><a href="charts-chartist.html">Chartist Chart</a></li>
+                                            <li><a href="charts-chartjs.html">Chartjs Chart</a></li>
+                                            <li><a href="charts-flot.html">Flot Chart</a></li>
+                                            <li><a href="charts-c3.html">C3 Chart</a></li>
+                                            <li><a href="charts-xchart.html">X Chart</a></li>
+                                            <li><a href="charts-other.html">Jquery Knob Chart</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="has-submenu">
+                                        <a href="#">Tables </a>
+                                        <ul class="submenu">
+                                            <li><a href="tables-basic.html">Basic Tables</a></li>
+                                            <li><a href="tables-datatable.html">Data Table</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="has-submenu">
+                                        <a href="#">Icons</a>
+                                        <ul class="submenu">
+                                            <li><a href="icons-material.html">Material Design</a></li>
+                                            <li><a href="icons-fontawesome.html">Font Awesome</a></li>
+                                            <li><a href="icons-themify.html">Themify Icons</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="has-submenu">
+                                        <a href="#">Maps</a>
+                                        <ul class="submenu">
+                                            <li><a href="maps-google.html"> Google Map</a></li>
+                                            <li><a href="maps-vector.html"> Vector Map</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li class="has-submenu">
+                                <a href="#"><i class="mdi mdi-layers"></i>Pages</a>
+                                <ul class="submenu megamenu">
+                                    <li>
+                                        <ul>
+                                            <li><a href="pages-login.html">Login</a></li>
+                                            <li><a href="pages-register.html">Register</a></li>
+                                            <li><a href="pages-recoverpw.html">Recover Password</a></li>
+                                            <li><a href="pages-lock-screen.html">Lock Screen</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <ul>
+                                            <li><a href="pages-blank.html">Blank Page</a></li>
+                                            <li><a href="pages-404.html">Error 404</a></li>
+                                            <li><a href="pages-500.html">Error 500</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul><!-- End navigation menu -->
+                    </div> <!-- end #navigation -->
+                </div> <!-- end container -->
+            </div> <!-- end navbar-custom -->
+        </header>
+        <!-- End Navigation Bar-->
+
+
+        <div class="wrapper">
+            <div class="container-fluid">
+
+                <!-- Page-Title -->
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="page-title-box">
+                            <div class="btn-group m-0 pull-right">
+                                <ol class="breadcrumb hide-phone p-0 m-0">
+                                    <li class="breadcrumb-item"><a href="#">Urora</a></li>
+                                    <li class="breadcrumb-item"><a href="#">Forms</a></li>
+                                    <li class="breadcrumb-item active">Form Elements</li>
+                                </ol>
+                            </div>
+                            <h4 class="page-title">Form Elements</h4>
+                        </div>
+                    </div>
+                </div>
+                <!-- end page title end breadcrumb -->
+                <div class="row">
+                    <div class="col-md-12 col-xl-12">
+                        <div class=" m-b-30">
+                            <div class="">
+                                <ul class="nav nav-tabs mb-4" id="myTab" role="tablist">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" id="home-tab" data-toggle="tab" href="#md-form" role="tab" aria-selected="true">Material Forms</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" id="profile-tab" data-toggle="tab" href="#b-form" role="tab"  aria-selected="false">Bootstrap Forms</a>
+                                    </li>
+                                </ul>
+                                <div class="tab-content" id="myTabContent">
+                                    <div class="tab-pane fade show active" id="md-form" role="tabpanel" aria-labelledby="home-tab">
+                                        <div class="row">
+                                            <div class="col-md-12 col-xl-12">
+                                                <div class="card m-b-30">
+                                                    <div class="card-body">
+                                                        <h4 class="mt-0 header-title">General Form</h4>
+                                                        <p class="text-muted font-14">Form controls flavored by Material Design for Bootstrap customizations such as <code>bmd-label-floating</code>.</p>
+                                                        <div class="general-label">
+                                                            <form class="mb-0">
+                                                                <div class="form-group">
+                                                                    <label for="exampleInputEmail1" class="bmd-label-floating ">Email address</label>
+                                                                    <input type="email" class="form-control" id="exampleInputEmail1">
+                                                                    <span class="bmd-help">We'll never share your email with anyone else.</span>
+                                                                </div>
+                                                                <div class="form-group">
+                                                                    <label for="exampleInputPassword1" class="bmd-label-floating">Password</label>
+                                                                    <input type="password" class="form-control" id="exampleInputPassword1">
+                                                                </div>
+                                                                
+                                                                <div class="form-group">
+                                                                    <label for="exampleTextarea" class="bmd-label-floating">Example textarea</label>
+                                                                    <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
+                                                                </div>
+                                                                
+                                                                <div class="checkbox mb-2">
+                                                                    <label>
+                                                                        <input type="checkbox"> Check me out
+                                                                    </label>
+                                                                </div>                                                   
+                                                                <button type="submit" class="btn btn-primary btn-raised mb-0">Submit</button>
+                                                                <button class="btn btn-raised btn-danger mb-0">Cancel</button>
+                                                            </form>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div> <!-- end col -->
+
+                                            <div class="col-md-12 col-xl-12">
+                                                <div class="card m-b-30">
+                                                    <div class="card-body">
+                                                        <h4 class="mt-0 header-title">Inline Forms</h4>
+                                                        <p class="text-muted font-14">Use the <code>.form-inline</code> class to to display a series of labels, form controls, and buttons on a single horizontal row. 
+                                                            Form controls within inline forms behave differently:</p>
+                                                        <form class="form-inline mb-0 row">
+                                                            <div class="form-group col-6">
+                                                                <label for="exampleInputName3" class="bmd-label-floating">Name</label>
+                                                                <input type="text" class="form-control w-100" id="exampleInputName3">
+                                                            </div>
+                                                            <div class="form-group col-6">
+                                                                <label for="exampleInputMobile3" class="bmd-label-floating">Mobile No</label>
+                                                                <input type="text" class="form-control w-100" id="exampleInputMobile3">
+                                                            </div>                                                                        
+                                                            <div class="form-group col-6">
+                                                                <label for="exampleInputEmail3" class="bmd-label-floating">Email</label>
+                                                                <input type="email" class="form-control w-100" id="exampleInputEmail3">
+                                                            </div>
+                                                            <div class="form-group col-6">
+                                                                <label class="bmd-label-floating">Password</label>
+                                                                <input type="password" class="form-control w-100" id="exampleInputPassword3">
+                                                            </div>
+                                                            <div class="form-group col-12">
+                                                                <label for="exampleTextarea" class="bmd-label-floating">Example textarea</label>
+                                                                <textarea class="form-control w-100" id="exampleTextarea3" rows="3"></textarea>
+                                                            </div>
+                                                            <div class="form-group bmd-form-group pt-3 col-12"> <!-- needed to match padding for floating labels -->
+                                                                <button type="submit" class="btn btn-raised btn-primary mb-0">Send</button>
+                                                                <button type="submit" class="btn btn-raised btn-danger ml-1 mb-0">Cancel</button>
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                </div>
+                                            </div> <!-- end col -->
+                                            <div class="col-md-12 col-xl-12">
+                                                <div class="card m-b-30">
+                                                    <div class="card-body">
+                                                        <h4 class="mt-0 header-title">Form controls</h4>
+                                                        <p class="text-muted font-14">Textual form controls—like<code>&lt;input&gt;</code>s,<code>&lt;select&gt;</code>s, 
+                                                            and <code>&lt;textarea&gt;</code>s—are styled with the <code>.form-control</code> class.</p>
+                                                        <form class="mb-0">
+                                                            <div class="form-group">
+                                                                <label for="exampleInputEmail1" class="bmd-label-floating">Email address</label>
+                                                                <input type="email" class="form-control" id="exampleInputEmail">
+                                                                <span class="bmd-help">We'll never share your email with anyone else.</span>
+                                                            </div>
+                                                            
+                                                            <div class="form-group">
+                                                                <label for="exampleSelect1" class="bmd-label-floating">Example select</label>
+                                                                <select class="form-control" id="exampleSelect1">
+                                                                <option>1</option>
+                                                                <option>2</option>
+                                                                <option>3</option>
+                                                                <option>4</option>
+                                                                <option>5</option>
+                                                                </select>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label for="exampleSelect2" class="bmd-label-floating">Example multiple select</label>
+                                                                <select multiple class="form-control" id="exampleSelect2">
+                                                                <option>1</option>
+                                                                <option>2</option>
+                                                                <option>3</option>
+                                                                <option>4</option>
+                                                                <option>5</option>
+                                                                </select>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label for="exampleTextarea" class="bmd-label-floating">Example textarea</label>
+                                                                <textarea class="form-control" id="exampleTextarea2" rows="3"></textarea>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label for="exampleInputFile" class="bmd-label-floating">File input</label>
+                                                                <input type="file" class="form-control-file" id="exampleInputFile">
+                                                                <small class="text-muted">This is some placeholder block-level help text for the above input. 
+                                                                    It's a bit lighter and easily wraps to a new line.</small>
+                                                                </div>
+                                                                <div class="radio">
+                                                                <label>
+                                                                    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+                                                                    Option one is this and that&mdash;be sure to include why it's great
+                                                                </label>
+                                                                </div>
+                                                                <div class="radio">
+                                                                <label>
+                                                                    <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+                                                                    Option two can be something else and selecting it will deselect option one
+                                                                </label>
+                                                                </div>
+                                                                <div class="radio disabled">
+                                                                <label>
+                                                                    <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3" disabled>
+                                                                    Option three is disabled
+                                                                </label>
+                                                            </div>
+                                                            <div class="checkbox mb-2">
+                                                                <label>
+                                                                    <input type="checkbox"> Check me out
+                                                                </label>
+                                                            </div>
+                                                            <button type="submit" class="btn btn-primary btn-raised mb-0">Submit</button>
+                                                            <button class="btn btn-raised btn-danger mb-0">Cancel</button>                                                                        
+                                                        </form>
+                                                    </div>
+                                                </div>
+                                            </div> <!-- end col -->                                                                                                                
+                                        </div> <!-- end row -->
+                                    </div>
+                                    <div class="tab-pane fade" id="b-form" role="tabpanel" aria-labelledby="profile-tab">
+                                        <div class="row">
+                                            <div class="col-md-12 col-xl-12">
+                                                <div class="card m-b-30">
+                                                    <div class="card-body">
+                                                        <h4 class="mt-0 header-title">Bootstrap Form</h4>
+                                                        <p class="text-muted font-14">Here’s a quick example to demonstrate Bootstrap’s form styles.
+                                                                Keep reading for documentation on required classes, form layout, and more.</p>
+                                                        <div class="general-label">
+                                                            <form class="mb-0">
+                                                                <div class="form-group">
+                                                                    <label for="exampleInputEmail1">Email address</label>
+                                                                    <input type="email" class="form-control" id="exampleInputEmail2" aria-describedby="emailHelp" placeholder="Enter email">
+                                                                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                                                                </div>
+                                                                <div class="form-group">
+                                                                    <label for="exampleInputPassword1">Password</label>
+                                                                    <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Password">
+                                                                </div>
+                                                                <div class="form-group">
+                                                                    <label for="exampleFormControlTextarea1">Example textarea</label>
+                                                                    <textarea class="form-control" id="exampleFormControlTextarea2" rows="3"></textarea>
+                                                                </div>
+                                                                <div class="form-check mb-2">
+                                                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                                                    <label class="form-check-label text-muted">Check me out</label>
+                                                                </div>
+                                                                <button type="submit" class="btn btn-raised btn-primary mb-0">Submit</button>
+                                                                <button type="submit" class="btn btn-raised btn-danger mb-0">Cancel</button>
+                                                            </form>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div> <!-- end col -->
+                                            
+                                            <div class="col-md-12 col-xl-12">
+                                                <div class="card m-b-30">
+                                                    <div class="card-body">
+                                                        <h4 class="mt-0 header-title">Bootstrap Form controls</h4>
+                                                        <p class="text-muted font-14">Textual form controls—like<code>&lt;input&gt;</code>s,<code>&lt;select&gt;</code>s, 
+                                                            and <code>&lt;textarea&gt;</code>s—are styled with the <code>.form-control</code> class.</p>
+                                                        <form class="mb-0">
+                                                            <div class="form-group">
+                                                                <label for="exampleFormControlInput1">Email address</label>
+                                                                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label for="exampleFormControlSelect1">Example select</label>
+                                                                <select class="form-control" id="exampleFormControlSelect1">
+                                                                <option>1</option>
+                                                                <option>2</option>
+                                                                <option>3</option>
+                                                                <option>4</option>
+                                                                <option>5</option>
+                                                                </select>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label for="exampleFormControlSelect2">Example multiple select</label>
+                                                                <select multiple class="form-control" id="exampleFormControlSelect2">
+                                                                <option>1</option>
+                                                                <option>2</option>
+                                                                <option>3</option>
+                                                                <option>4</option>
+                                                                <option>5</option>
+                                                                </select>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label for="exampleFormControlTextarea1">Example textarea</label>
+                                                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                </div>
+                                            </div> <!-- end col -->
+
+                                            <div class="col-md-12 col-xl-12">
+                                                <div class="card m-b-30">
+                                                    <div class="card-body">
+                                                        <h4 class="mt-0 header-title">Horizontal Form</h4>
+                                                        <p class="text-muted font-14">complex layouts can also be created with the grid system.</p>
+                                                        <form class="mb-0">
+                                                            <div class="form-row">
+                                                                <div class="form-group col-md-6">
+                                                                <label for="inputEmail4">Email</label>
+                                                                <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+                                                                </div>
+                                                                <div class="form-group col-md-6">
+                                                                <label for="inputPassword4">Password</label>
+                                                                <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label for="inputAddress">Address</label>
+                                                                <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label for="inputAddress2">Address 2</label>
+                                                                <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+                                                            </div>
+                                                            <div class="form-row">
+                                                                <div class="form-group col-md-6">
+                                                                <label for="inputCity">City</label>
+                                                                <input type="text" class="form-control" id="inputCity">
+                                                                </div>
+                                                                <div class="form-group col-md-4">
+                                                                <label for="inputState">State</label>
+                                                                <select id="inputState" class="form-control">
+                                                                    <option selected>Gujarat</option>
+                                                                    <option>Kashmir</option>
+                                                                    <option>Himachal</option>
+                                                                    <option>Panjab</option>
+                                                                </select>
+                                                                </div>
+                                                                <div class="form-group col-md-2">
+                                                                <label for="inputZip">Zip</label>
+                                                                <input type="text" class="form-control" id="inputZip">
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <div class="form-check">
+                                                                <input class="form-check-input" type="checkbox" id="gridCheck">
+                                                                <label class="form-check-label text-muted" for="gridCheck">
+                                                                    Check me out
+                                                                </label>
+                                                                </div>
+                                                            </div>
+                                                            <button type="submit" class="btn btn-raised btn-primary mb-0">Sign in</button>
+                                                        </form>
+                                                    </div>
+                                                </div>
+                                            </div> <!-- end col -->
+
+
+                                            <div class="col-md-12 col-xl-12">
+                                                <div class="card m-b-30">
+                                                    <div class="card-body">
+                                                        <h4 class="mt-0 header-title">Column Sizing</h4>
+                                                        <form class="mb-0">
+                                                            <div class="form-row align-items-center">
+                                                                <div class="col-4">
+                                                                    <label class="sr-only" for="inlineFormInput">Name</label>
+                                                                    <input type="text" class="form-control " id="inlineFormInput" placeholder="Jane Doe">
+                                                                </div>
+                                                                <div class="col-4">
+                                                                    <label class="sr-only" for="inlineFormInputGroup">Username</label>
+                                                                    <div class="input-group">
+                                                                        <div class="input-group-prepend">
+                                                                        </div>
+                                                                        <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Username">
+                                                                    </div>
+                                                                </div>
+                                                                
+                                                                <div class="col-2">
+                                                                    <button type="submit" class="btn btn-raised btn-primary  mb-0">Submit</button>
+                                                                </div>
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                </div>
+                                            </div> <!-- end col -->
+
+                                            <div class="col-md-12 col-xl-12">
+                                                <div class="card m-b-30">
+                                                    <div class="card-body">
+                                                        <h4 class="mt-0 header-title">Browser Defaults</h4>
+                                                        <form class="mb-0">
+                                                            <div class="form-row">
+                                                                <div class="col-md-4 mb-3">
+                                                                <h6 class="text-muted">First name</h6>
+                                                                <input type="text" class="form-control" id="validationDefault01" placeholder="First name" value="Mark" required>
+                                                                </div>
+                                                                <div class="col-md-4 mb-3">
+                                                                <h6 class="text-muted">Last name</h6>
+                                                                <input type="text" class="form-control" id="validationDefault02" placeholder="Last name" value="Otto" required>
+                                                                </div>
+                                                                <div class="col-md-4 mb-3">
+                                                                <h6 class="text-muted">Username</h6>
+                                                                <div class="input-group">
+                                                                    <div class="input-group-prepend">
+                                                                    <span class="input-group-text" id="inputGroupPrepend2">@</span>
+                                                                    </div>
+                                                                    <input type="text" class="form-control" id="validationDefaultUsername" placeholder="Username" aria-describedby="inputGroupPrepend2" required>
+                                                                </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-row">
+                                                                <div class="col-md-6 mb-3">
+                                                                <h6 class="text-muted">City</h6>
+                                                                <input type="text" class="form-control" id="validationDefault03" placeholder="City" required>
+                                                                </div>
+                                                                <div class="col-md-3 mb-3">
+                                                                <h6 class="text-muted">State</h6>
+                                                                <input type="text" class="form-control" id="validationDefault04" placeholder="State" required>
+                                                                </div>
+                                                                <div class="col-md-3 mb-3">
+                                                                <h6 class="text-muted">Zip</h6>
+                                                                <input type="text" class="form-control" id="validationDefault05" placeholder="Zip" required>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <div class="form-check">
+                                                                <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+                                                                <label class="form-check-label text-muted" for="invalidCheck2">
+                                                                    Agree to terms and conditions
+                                                                </label>
+                                                                </div>
+                                                            </div>
+                                                            <button class="btn btn-raised btn-primary mb-0" type="submit">Submit form</button>
+                                                        </form>
+                                                    </div>
+                                                </div>
+                                            </div> <!-- end col -->
+                                            <div class="col-md-12 col-xl-12">
+                                                <div class="card m-b-30">
+                                                    <div class="card-body">
+                                                        <h4 class="mt-0 header-title">Input Group</h4>
+                                                        <p class="text-muted font-14">                                                                           
+                                                            Place one add-on or button on either side of an input. You may also place one on both sides of an input. 
+                                                            We do not support multiple form-controls in a single input group and<code>&lt;label &gt;</code>s must come outside the input group.
+                                                        </p>
+                                                        <div class="input-group mb-3">
+                                                            <div class="input-group-prepend">
+                                                                <span class="input-group-text" id="basic-addon1">@</span>
+                                                            </div>
+                                                            <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+                                                            </div>
+                                                            
+                                                            <div class="input-group mb-3">
+                                                            <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                                                            <div class="input-group-append">
+                                                                <span class="input-group-text" id="basic-addon2">@example.com</span>
+                                                            </div>
+                                                            </div>
+                                                            
+                                                            <h6 class="text-muted">Your vanity URL</h6>
+                                                            <div class="input-group mb-3">
+                                                            <div class="input-group-prepend">
+                                                                <span class="input-group-text" id="basic-addon3">https://example.com/users/</span>
+                                                            </div>
+                                                            <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+                                                            </div>
+                                                            
+                                                            <div class="input-group mb-3">
+                                                            <div class="input-group-prepend">
+                                                                <span class="input-group-text">$</span>
+                                                            </div>
+                                                            <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+                                                            <div class="input-group-append">
+                                                                <span class="input-group-text">.00</span>
+                                                            </div>
+                                                            </div>
+                                                            
+                                                            <div class="input-group">
+                                                            <div class="input-group-prepend">
+                                                                <span class="input-group-text">With textarea</span>
+                                                            </div>
+                                                            <textarea class="form-control" aria-label="With textarea"></textarea>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div> <!-- end col -->
+                                        </div> <!-- end row -->
+                                        <div class="row">
+                                            <div class="col-md-12 col-xl-12">
+                                                <div class="card m-b-30">
+                                                    <div class="card-body">
+                                                        <h4 class="mt-0 header-title">Multiple Addons And Button Addons</h4>
+                                                        <p class="text-muted font-14">
+                                                            Multiple add-ons are supported and can be mixed with checkbox and radio input versions. 
+                                                        </p>
+                                                        <div class="input-group mb-3">
+                                                            <div class="input-group-prepend">
+                                                                <span class="input-group-text">$</span>
+                                                                <span class="input-group-text">0.00</span>
+                                                            </div>
+                                                            <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+                                                            </div>
+                                                            
+                                                            <div class="input-group">
+                                                            <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+                                                            <div class="input-group-append">
+                                                                <span class="input-group-text">$</span>
+                                                                <span class="input-group-text">0.00</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="input-group my-3">
+                                                            <div class="input-group-prepend">
+                                                                <button class="btn btn-outline-secondary" type="button">Button</button>
+                                                            </div>
+                                                            <input type="text" class="form-control" placeholder="" aria-label="" aria-describedby="basic-addon1">
+                                                            </div>
+                                                            
+                                                            <div class="input-group mb-3">
+                                                            <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                                                            <div class="input-group-append">
+                                                                <button class="btn btn-outline-secondary" type="button">Button</button>
+                                                            </div>
+                                                            </div>
+                                                            
+                                                            <div class="input-group mb-3">
+                                                            <div class="input-group-prepend">
+                                                                <button class="btn btn-outline-secondary" type="button">Button</button>
+                                                                <button class="btn btn-outline-secondary" type="button">Button</button>
+                                                            </div>
+                                                            <input type="text" class="form-control" placeholder="" aria-label="" aria-describedby="basic-addon1">
+                                                            </div>
+                                                            
+                                                            <div class="input-group">
+                                                            <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                                                            <div class="input-group-append">
+                                                                <button class="btn btn-outline-secondary" type="button">Button</button>
+                                                                <button class="btn btn-outline-secondary" type="button">Button</button>
+                                                            </div>
+                                                        </div>
+                                                        <div class="input-group mt-3">
+                                                            <input type="text" class="form-control" aria-label="Text input with dropdown button">
+                                                            <div class="input-group-append">
+                                                                <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</button>
+                                                                <div class="dropdown-menu">
+                                                                <a class="dropdown-item" href="#">Action</a>
+                                                                <a class="dropdown-item" href="#">Another action</a>
+                                                                <a class="dropdown-item" href="#">Something else here</a>
+                                                                <div role="separator" class="dropdown-divider"></div>
+                                                                <a class="dropdown-item" href="#">Separated link</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="input-group mt-3">
+                                                            <input type="text" class="form-control" aria-label="Text input with segmented dropdown button">
+                                                            <div class="input-group-append">
+                                                                <button type="button" class="btn btn-outline-secondary mb-0">Action</button>
+                                                                <button type="button" class="btn btn-outline-secondary dropdown-toggle dropdown-toggle-split mb-0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                                <span class="sr-only">Toggle Dropdown</span>
+                                                                </button>
+                                                                <div class="dropdown-menu">
+                                                                <a class="dropdown-item" href="#">Action</a>
+                                                                <a class="dropdown-item" href="#">Another action</a>
+                                                                <a class="dropdown-item" href="#">Something else here</a>
+                                                                <div role="separator" class="dropdown-divider"></div>
+                                                                <a class="dropdown-item" href="#">Separated link</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- end row -->
+
+            </div> <!-- end container -->
+        </div>
+        <!-- end wrapper -->
+
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12">
+                        © 2018 Urora by Mannatthemes.
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- End Footer -->
+
+
+       <!-- jQuery  -->
+       <script src="assets/js/jquery.min.js"></script>
+       <script src="assets/js/popper.min.js"></script>
+       <script src="assets/js/bootstrap-material-design.js"></script>
+       <script src="assets/js/modernizr.min.js"></script>
+       <script src="assets/js/detect.js"></script>
+       <script src="assets/js/fastclick.js"></script>
+       <script src="assets/js/jquery.slimscroll.js"></script>
+       <script src="assets/js/jquery.blockUI.js"></script>
+       <script src="assets/js/waves.js"></script>
+       <script src="assets/js/jquery.nicescroll.js"></script>
+       <script src="assets/js/jquery.scrollTo.min.js"></script>
+
+       <!-- App js -->
+       <script src="assets/js/app.js"></script>
+      
+    </body>
+</html>

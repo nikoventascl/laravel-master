@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+        <title>Urora - Responsive Bootstrap 4 Admin Dashboard</title>
+        <meta content="Admin Dashboard" name="description" />
+        <meta content="Mannatthemes" name="author" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+        <link rel="shortcut icon" href="assets/images/favicon.ico">
+
+        <!-- Plugins css -->
+        <link href="assets/plugins/timepicker/tempusdominus-bootstrap-4.css" rel="stylesheet" />
+        <link href="assets/plugins/timepicker/bootstrap-material-datetimepicker.css" rel="stylesheet">
+        <link href="assets/plugins/clockpicker/jquery-clockpicker.min.css" rel="stylesheet" />
+        <link href="assets/plugins/colorpicker/asColorPicker.min.css" rel="stylesheet" type="text/css" />
+        <link href="assets/plugins/select2/select2.min.css" rel="stylesheet" type="text/css" />
+
+        <link href="assets/plugins/animate/animate.css" rel="stylesheet" type="text/css">
+        <link href="assets/css/bootstrap-material-design.min.css" rel="stylesheet" type="text/css">
+        <link href="assets/css/icons.css" rel="stylesheet" type="text/css">
+        <link href="assets/css/style.css" rel="stylesheet" type="text/css">
+
+    </head>
+
+
+    <body>
+
+        <!-- Loader -->
+        <div id="preloader"><div id="status"><div class="spinner"></div></div></div>
+
+        <!-- Navigation Bar-->
+        <header id="topnav">
+            <div class="topbar-main">
+                <div class="container-fluid">
+
+                    <!-- Logo container-->
+                    <div class="logo">
+                        <!-- Text Logo -->
+                        <!--<a href="index.html" class="logo">-->
+                        <!--Urora-->
+                        <!--</a>-->
+                        <!-- Image Logo -->
+                        <a href="index.html" class="logo">
+                            <img src="assets/images/logo-sm.png" alt="" height="50" class="logo-small">
+                            <img src="assets/images/logo-h-lg.png" alt="" class="logo-large">
+                        </a>
+
+                    </div>
+                    <!-- End Logo container-->
+
+
+                    <div class="menu-extras topbar-custom">
+                        
+                        <ul class="list-inline float-right mb-0 ">
+                            <!-- language-->
+
+                            <li class="list-inline-item dropdown notification-list">
+                                <div class="list-inline-item hide-phone app-search">
+                                    <form role="search" class="">
+                                        <div class="form-group pt-1"> 
+                                            <input type="text" class="form-control" placeholder="Search..">
+                                            <a href=""><i class="fa fa-search"></i></a>
+                                        </div>
+                                    </form>
+                                </div>   
+                            </li>
+                            <li class="list-inline-item dropdown notification-list">
+                                <a class="nav-link dropdown-toggle arrow-none waves-effect" data-toggle="dropdown" href="#" role="button"
+                                    aria-haspopup="false" aria-expanded="false">
+                                    <i class="ti-email noti-icon"></i>
+                                    <span class="badge badge-danger heartbit  noti-icon-badge">5</span>
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-right dropdown-arrow dropdown-menu-lg">
+                                    <!-- item-->
+                                    <div class="dropdown-item noti-title align-self-center">
+                                        <h5><span class="badge badge-danger float-right">745</span>Messages</h5>
+                                    </div>
+
+                                    <!-- item-->
+                                    <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                        <div class="notify-icon"><img src="assets/images/users/avatar-2.jpg" alt="user-img" class="img-fluid rounded-circle" /> </div>
+                                        <p class="notify-details"><b>Charles M. Jones</b><small class="text-muted">Dummy text of the printing and typesetting industry.</small></p>
+                                    </a>
+
+                                    <!-- item-->
+                                    <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                        <div class="notify-icon"><img src="assets/images/users/avatar-3.jpg" alt="user-img" class="img-fluid rounded-circle" /> </div>
+                                        <p class="notify-details"><b>Thomas J. Mimms</b><small class="text-muted">You have 87 unread messages</small></p>
+                                    </a>
+
+                                    <!-- item-->
+                                    <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                        <div class="notify-icon"><img src="assets/images/users/avatar-4.jpg" alt="user-img" class="img-fluid rounded-circle" /> </div>
+                                        <p class="notify-details"><b>Luis M. Konrad</b><small class="text-muted">It is a long established fact that a reader will</small></p>
+                                    </a>
+
+                                    <!-- All-->
+                                    <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                        View All
+                                    </a>
+
+                                </div>
+                            </li>
+
+                            <li class="list-inline-item dropdown notification-list">
+                                <a class="nav-link dropdown-toggle arrow-none waves-effect" data-toggle="dropdown" href="#" role="button"
+                                    aria-haspopup="false" aria-expanded="false">
+                                    <i class="ti-bell noti-icon"></i>
+                                    <span class="badge badge-success a-animate-blink noti-icon-badge">3</span>
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-right dropdown-arrow dropdown-menu-lg">
+                                    <!-- item-->
+                                    <div class="dropdown-item noti-title">
+                                        <h5><span class="badge badge-danger float-right">87</span>Notification</h5>
+                                    </div>
+
+                                    <!-- item-->
+                                    <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                        <div class="notify-icon bg-primary"><i class="mdi mdi-cart-outline"></i></div>
+                                        <p class="notify-details"><b>Your order is placed</b><small class="text-muted">Dummy text of the printing and typesetting industry.</small></p>
+                                    </a>
+
+                                    <!-- item-->
+                                    <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                        <div class="notify-icon bg-success"><i class="mdi mdi-message"></i></div>
+                                        <p class="notify-details"><b>New Message received</b><small class="text-muted">You have 87 unread messages</small></p>
+                                    </a>
+
+                                    <!-- item-->
+                                    <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                        <div class="notify-icon bg-warning"><i class="mdi mdi-martini"></i></div>
+                                        <p class="notify-details"><b>Your item is shipped</b><small class="text-muted">It is a long established fact that a reader will</small></p>
+                                    </a>
+
+                                    <!-- All-->
+                                    <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                        View All
+                                    </a>
+
+                                </div>
+                            </li>
+                            <li class="list-inline-item dropdown notification-list">
+                                <div class="dropdown notification-list nav-pro-img">
+                                    <a class="dropdown-toggle nav-link arrow-none waves-effect nav-user" data-toggle="dropdown" href="#" role="button"
+                                        aria-haspopup="false" aria-expanded="false">
+                                        <img src="assets/images/users/avatar-3.jpg" alt="user" class="rounded-circle">
+                                    </a>
+                                    <div class="dropdown-menu dropdown-menu-right profile-dropdown ">
+                                        <!-- item-->
+                                        <div class="dropdown-item noti-title">
+                                            <h5>Welcome</h5>
+                                        </div>
+                                        <a class="dropdown-item" href="#"><i class="mdi mdi-account-circle m-r-5 text-muted"></i> Profile</a>
+                                        <a class="dropdown-item" href="#"><i class="mdi mdi-wallet m-r-5 text-muted"></i> My Wallet</a>
+                                        <a class="dropdown-item d-block" href="#"><span class="badge badge-success float-right">5</span><i class="mdi mdi-settings m-r-5 text-muted"></i> Settings</a>
+                                        <a class="dropdown-item" href="#"><i class="mdi mdi-lock-open-outline m-r-5 text-muted"></i> Lock screen</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" href="#"><i class="mdi mdi-logout m-r-5 text-muted"></i> Logout</a>
+                                    </div>                                                                    
+                                </div>
+                            </li>
+                            <li class="menu-item list-inline-item">
+                                <!-- Mobile menu toggle-->
+                                <a class="navbar-toggle nav-link" id="mobileToggle">
+                                    <div class="lines">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </div>
+                                </a>
+                                <!-- End mobile menu toggle-->
+                            </li>    
+                        </ul> 
+                        
+                    </div>
+                    <!-- end menu-extras -->
+
+                    <div class="clearfix"></div>
+
+                </div> <!-- end container -->
+            </div>
+            <!-- end topbar-main -->
+
+            <!-- MENU Start -->
+            <div class="navbar-custom">
+                <div class="container-fluid">
+                    <div id="navigation">
+                        <!-- Navigation Menu-->
+                        <ul class="navigation-menu text-center">
+
+                            <li class="has-submenu ">
+                                <a href="index.html"><i class="mdi mdi-view-dashboard"></i>Dashboard</a>
+                            </li>
+                            
+
+                            <li class="has-submenu ">
+                                <a href="calendar.html"><i class="mdi mdi-calendar-clock"></i>Calendar</a>
+                                
+                            </li>
+
+                            <li class="has-submenu">
+                                <a href="#"><i class="mdi mdi-animation"></i>User Interface</a>
+                                <ul class="submenu megamenu">
+                                    <li>
+                                        <ul>
+                                            <li><a href="ui-badge.html">Badge</a></li>
+                                            <li><a href="ui-alertify.html">Alertify</a></li>
+                                            <li><a href="ui-buttons.html">Buttons</a></li>
+                                            <li><a href="ui-carousel.html">Carousel</a></li>
+                                            <li><a href="ui-dropdowns.html">Dropdowns</a></li>
+                                            <li><a href="ui-typography.html">Typography</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <ul>
+                                            <li><a href="ui-cards.html">Cards</a></li>
+                                            <li><a href="ui-grid.html">Grid</a></li>
+                                            <li><a href="ui-rating.html">Rating</a></li>                                            
+                                            <li><a href="ui-modals.html">Modals</a></li>
+                                            <li><a href="ui-images.html">Images</a></li>
+                                            <li><a href="ui-tabs-accordions.html">Tabs &amp; Accordions</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <ul>
+                                            <li><a href="ui-navs.html">Navs</a></li>
+                                            <li><a href="ui-alerts.html">Alerts</a></li>                                                                                          
+                                            <li><a href="ui-pagination.html">Pagination</a></li>
+                                            <li><a href="ui-rangeslider.html">Range Slider</a></li>
+                                            <li><a href="ui-progressbars.html">Progress Bars</a></li> 
+                                            <li><a href="ui-popover-tooltips.html">Popover & Tooltips</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li class="has-submenu">
+                                <a href="#"><i class="mdi mdi-cards"></i>Components</a>
+                                <ul class="submenu">
+                                    <li class="has-submenu">
+                                        <a href="#">Forms</a>
+                                        <ul class="submenu">
+                                            <li><a href="form-elements.html">Form Elements</a></li>
+                                            <li><a href="form-validation.html">Form Validation</a></li>
+                                            <li><a href="form-advanced.html">Form Advanced</a></li>
+                                            <li><a href="form-mask.html">Form Mask</a></li>
+                                            <li><a href="form-editors.html">Form Editors</a></li>
+                                            <li><a href="form-uploads.html">Form File Upload</a></li>                                            
+                                        </ul>
+                                    </li>
+                                    
+                                    <li class="has-submenu">
+                                        <a href="#">Charts</a>
+                                        <ul class="submenu">
+                                            <li><a href="charts-morris.html">Morris Chart</a></li>
+                                            <li><a href="charts-chartist.html">Chartist Chart</a></li>
+                                            <li><a href="charts-chartjs.html">Chartjs Chart</a></li>
+                                            <li><a href="charts-flot.html">Flot Chart</a></li>
+                                            <li><a href="charts-c3.html">C3 Chart</a></li>
+                                            <li><a href="charts-xchart.html">X Chart</a></li>
+                                            <li><a href="charts-other.html">Jquery Knob Chart</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="has-submenu">
+                                        <a href="#">Tables </a>
+                                        <ul class="submenu">
+                                            <li><a href="tables-basic.html">Basic Tables</a></li>
+                                            <li><a href="tables-datatable.html">Data Table</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="has-submenu">
+                                        <a href="#">Icons</a>
+                                        <ul class="submenu">
+                                            <li><a href="icons-material.html">Material Design</a></li>
+                                            <li><a href="icons-fontawesome.html">Font Awesome</a></li>
+                                            <li><a href="icons-themify.html">Themify Icons</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="has-submenu">
+                                        <a href="#">Maps</a>
+                                        <ul class="submenu">
+                                            <li><a href="maps-google.html"> Google Map</a></li>
+                                            <li><a href="maps-vector.html"> Vector Map</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li class="has-submenu">
+                                <a href="#"><i class="mdi mdi-layers"></i>Pages</a>
+                                <ul class="submenu megamenu">
+                                    <li>
+                                        <ul>
+                                            <li><a href="pages-login.html">Login</a></li>
+                                            <li><a href="pages-register.html">Register</a></li>
+                                            <li><a href="pages-recoverpw.html">Recover Password</a></li>
+                                            <li><a href="pages-lock-screen.html">Lock Screen</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <ul>
+                                            <li><a href="pages-blank.html">Blank Page</a></li>
+                                            <li><a href="pages-404.html">Error 404</a></li>
+                                            <li><a href="pages-500.html">Error 500</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul><!-- End navigation menu -->
+                    </div> <!-- end #navigation -->
+                </div> <!-- end container -->
+            </div> <!-- end navbar-custom -->
+        </header>
+        <!-- End Navigation Bar-->
+
+
+        <div class="wrapper">
+            <div class="container-fluid">
+
+                <!-- Page-Title -->
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="page-title-box">
+                            <div class="btn-group m-0 pull-right">
+                                <ol class="breadcrumb hide-phone p-0 m-0">
+                                    <li class="breadcrumb-item"><a href="#">Urora</a></li>
+                                    <li class="breadcrumb-item"><a href="#">Forms</a></li>
+                                    <li class="breadcrumb-item active">Advanced</li>
+                                </ol>
+                            </div>
+                            <h4 class="page-title">Advanced</h4>
+                        </div>
+                    </div>
+                </div>
+                <!-- end page title end breadcrumb -->
+                <div class="row">
+                    <div class="col-md-12 col-lg-12 col-xl-4">
+                        <div class="card m-b-30">
+                            <div class="card-body">
+
+                                <h4 class="mt-0 header-title">Bootstrap TouchSpin</h4>
+                                <p class="text-muted font-14">A mobile and touch friendly input spinner component for Bootstrap</p>
+
+                                <form class="mb-0">
+                                    <div class="form-group pt-0">
+                                        <h6 class="control-label text-muted">Using data attributes</h6>
+                                        <input id="demo0" type="text" value="55" name="demo0" data-bts-min="0" data-bts-max="100" data-bts-init-val="" data-bts-step="1" data-bts-decimal="0" data-bts-step-interval="100" data-bts-force-step-divisibility="round" data-bts-step-interval-delay="500" data-bts-prefix="" data-bts-postfix="" data-bts-prefix-extra-class="" data-bts-postfix-extra-class="" data-bts-booster="true" data-bts-boostat="10" data-bts-max-boosted-step="false" data-bts-mousewheel="true" data-bts-button-down-class="btn btn-default" data-bts-button-up-class="btn btn-default"/>
+                                    </div>
+                                    <div class="form-group pt-0">
+                                        <h6 class="control-label text-muted">Example with postfix (large)</h6>
+                                        <input id="demo1" type="text" value="55" name="demo1">
+                                    </div>
+                                    <div class="form-group pt-0">
+                                        <h6 class="control-label text-muted">With prefix </h6>
+                                        <input id="demo2" type="text" value="0" name="demo2" class=" form-control">
+                                    </div>
+
+                                    <div class="form-group pt-0">
+                                        <h6 class="control-label text-muted">Init with empty value:</h6>
+                                        <input id="demo3" type="text" value="" name="demo3">
+                                    </div>
+                                    <div class="form-group pt-0">
+                                        <h6 class="control-label text-muted">Value attribute is not set (applying settings.initval)</h6>
+                                        <input id="demo3_21" type="text" value="" name="demo3_21">
+                                    </div>
+                                    <div class="form-group mb-0 pt-0">
+                                        <h6 class="control-label text-muted">Value is set explicitly to 33 (skipping settings.initval) </h6>
+                                        <input id="demo3_22" type="text" value="33" name="demo3_22">
+                                    </div>    
+                                </form>    
+                            </div>
+                        </div>
+
+                        <div class="card m-b-30">
+                            <div class="card-body bootstrap-select-1">
+                                    <h4 class="mt-0 header-title">Colorpicker</h4>
+                                    <p class="text-muted font-14">Simple jQuery Based Color and Gradient Picker - asColorPicker. </p>
+                                <div class="row">
+                                    <div class="col-md-12 mb-3">
+                                        <h6 class="text-muted mb-2">Simple mode</h6>                                            
+                                        <input type="text" class="colorpicker form-control" value="#079c9e" /> 
+                                    </div>                                    
+                                    <div class="col-md-12 mb-3">
+                                        <h6 class="text-muted mb-2">Gradiant mode</h6>                                            
+                                        <input type="text" class="gradient-colorpicker form-control" value="#ffa784" />
+                                    </div>
+                                    <div class="col-md-12">
+                                        <h6 class="text-muted mb-2">Complex mode</h6>                                           
+                                        <input type="text" class="complex-colorpicker form-control" value="#a0a9b3" /> 
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> <!-- end col -->
+                    <div class="col-xl-8">
+                        <div class="card m-b-30">
+                            <div class="card-body">            
+                                <h4 class="mt-0 header-title">Bootstrap MaxLength</h4>
+                                <p class="text-muted  font-14">This plugin integrates by default with
+                                    Twitter bootstrap using badges to display the maximum lenght of the
+                                    field where the user is inserting text. </p>
+
+                                <h6 class="text-muted"><b>Default usage</b></h6>
+                                <p class="text-muted m-b-15 font-13">
+                                    The badge will show up by default when the remaining chars are 10 or less:
+                                </p>
+                                <input type="text" class="form-control" maxlength="25" name="defaultconfig" id="defaultconfig" />
+
+                                <div class="m-t-20">
+                                    <h6 class="text-muted"><b>Threshold value</b></h6>
+                                    <p class="text-muted m-b-15 font-13">
+                                        Do you want the badge to show up when there are 20 chars or less? Use the <code>threshold</code> option:
+                                    </p>
+                                    <input type="text" maxlength="25" name="thresholdconfig" class="form-control" id="thresholdconfig" />
+                                </div>
+
+                                <div class="m-t-20">
+                                    <h6 class="text-muted"><b>All the options</b></h6>
+                                    <p class="text-muted m-b-15 font-13">
+                                        Please note: if the <code>alwaysShow</code> option is enabled, the <code>threshold</code> option is ignored.
+                                    </p>
+                                    <input type="text" class="form-control" maxlength="25" name="alloptions" id="alloptions" />
+                                </div>
+
+                                <div class="m-t-20">
+                                    <h6 class="text-muted"><b>Position</b></h6>
+                                    <p class="text-muted m-b-15 font-13">
+                                        All you need to do is specify the <code>placement</code> option, with one of those strings. If none
+                                        is specified, the positioning will be defauted to 'bottom'.
+                                    </p>
+                                    <input type="text" class="form-control" maxlength="25" name="placement" id="placement" />
+                                </div>
+
+                                <div class="m-t-20">
+                                    <h6 class="text-muted"><b>textareas</b></h6>
+                                    <p class="text-muted m-b-15 font-13">
+                                        Bootstrap maxlength supports textarea as well as inputs. Even on old IE.
+                                    </p>
+                                    <textarea id="textarea" class="form-control" maxlength="225" rows="3" placeholder="This textarea has a limit of 225 chars."></textarea>
+                                </div>            
+                            </div>
+                        </div>
+                        <div class="card m-b-30">
+                            <div class="card-body bootstrap-select-1">
+                                <h4 class="header-title mt-0">Clock Picker</h4>
+                                <p class="text-muted font-14">Simple jQuery Based Color and Gradient Picker - asColorPicker. </p>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <h6 class="text-muted mt-3">Default Clock Picker</h6>
+                                        <div class="input-group clockpicker">
+                                            <input type="text" class="form-control" value="10:10">
+                                            <div class="input-group-append">
+                                                <span class="input-group-text"><i class="fa fa-clock-o"></i></span>
+                                            </div>
+                                        </div>
+                                        <h6 class="text-muted mt-3">Auto close Clock Picker</h6>
+                                        <div class="input-group clockpicker " data-placement="bottom" data-align="top" data-autoclose="true">
+                                            <input type="text" class="form-control" value="01:35"> 
+                                            <div class="input-group-append">
+                                                <span class="input-group-text"><i class="fa fa-clock-o"></i></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <h6 class="text-muted mt-3">Left Placement</h6>
+                                        <div class="input-group clockpicker " data-placement="left" data-align="top" data-autoclose="true">
+                                            <input type="text" class="form-control" value="01:57">
+                                            <div class="input-group-append">
+                                                <span class="input-group-text"><i class="fa fa-clock-o"></i></span>
+                                            </div>
+                                        </div>
+                                        <h6 class="text-muted mt-3">Now time</h6>
+                                        <div class="input-group">
+                                            <input class="form-control" id="single-input" value="" placeholder="Now"> 
+                                            <span class="input-group-append">
+                                                <button type="button" id="check-minutes" class="btn btn-raised btn-primary mb-0">Check the minutes</button>
+                                            </span> 
+                                        </div>                                            
+                                    </div>
+                                </div>               
+                            </div>
+                        </div>
+                    </div>
+                </div> <!-- end row -->
+
+
+                <div class="row">
+                    <div class="col-xl-6">
+                        <div class="card m-b-30">
+                            <div class="card-body bootstrap-select-1">
+                                <h4 class="header-title mt-0">Bootstrap Material Datetimepicker</h4>
+                                <p class="text-muted  font-14">An example of Bootstrap Material DatePicker.</p>                                        
+                                <div class="row form-material">
+                                    <div class="col-md-6">
+                                        <h6 class="text-muted">Default Material Date Picker</h6>
+                                        <input type="text" class="form-control" placeholder="2017-06-04" id="mdate">
+                                        
+                                        <h6 class="text-muted mt-3">Default Material Date Timepicker</h6>
+                                        <input type="text" id="date-format" class="form-control" placeholder="Saturday 24 June 2017 - 21:44">
+                                        
+                                    </div>
+                                    <div class="col-md-6">
+                                        <h6 class="text-muted">Time Picker</h6>
+                                        <input class="form-control" id="timepicker" placeholder="Check time">
+                                        
+                                        <h6 class="text-muted mt-3">Min Date set</h6>
+                                        <input type="text" class="form-control" placeholder="set min date" id="min-date"> 
+                                    </div>
+                                </div>                  
+                            </div>
+                        </div>       
+                    </div> 
+                    <div class="col-xl-6">
+                        <div class="card m-b-30">
+                            <div class="card-body">
+                                <h4 class="header-title mt-0">Select2 Components</h4>
+                                <p class="text-muted  font-14">Select2 is a jQuery based replacement for select boxes. 
+                                    It supports searching, remote data sets, and infinite scrolling of results. </p>
+                                <h6 class="text-muted">Single select</h6>
+                                <select class="select2 form-control mb-3 custom-select" style="width: 100%; height:36px;">
+                                    <option>Select</option>
+                                    <optgroup label="Alaskan/Hawaiian Time Zone">
+                                        <option value="AK">Alaska</option>
+                                        <option value="HI">Hawaii</option>
+                                    </optgroup>
+                                    <optgroup label="Pacific Time Zone">
+                                        <option value="CA">California</option>
+                                        <option value="NV">Nevada</option>
+                                        <option value="OR">Oregon</option>
+                                        <option value="WA">Washington</option>
+                                    </optgroup>
+                                    <optgroup label="Mountain Time Zone">
+                                        <option value="AZ">Arizona</option>
+                                        <option value="CO">Colorado</option>
+                                        <option value="ID">Idaho</option>
+                                        <option value="MT">Montana</option>
+                                        <option value="NE">Nebraska</option>
+                                        <option value="NM">New Mexico</option>
+                                        <option value="ND">North Dakota</option>
+                                        <option value="UT">Utah</option>
+                                        <option value="WY">Wyoming</option>
+                                    </optgroup>
+                                    <optgroup label="Central Time Zone">
+                                        <option value="AL">Alabama</option>
+                                        <option value="AR">Arkansas</option>
+                                        <option value="IL">Illinois</option>
+                                        <option value="IA">Iowa</option>
+                                        <option value="KS">Kansas</option>
+                                        <option value="KY">Kentucky</option>
+                                        <option value="LA">Louisiana</option>
+                                        <option value="MN">Minnesota</option>
+                                        <option value="MS">Mississippi</option>
+                                        <option value="MO">Missouri</option>
+                                        <option value="OK">Oklahoma</option>
+                                        <option value="SD">South Dakota</option>
+                                        <option value="TX">Texas</option>
+                                        <option value="TN">Tennessee</option>
+                                        <option value="WI">Wisconsin</option>
+                                    </optgroup>
+                                    <optgroup label="Eastern Time Zone">
+                                        <option value="CT">Connecticut</option>
+                                        <option value="DE">Delaware</option>
+                                        <option value="FL">Florida</option>
+                                        <option value="GA">Georgia</option>
+                                        <option value="IN">Indiana</option>
+                                        <option value="ME">Maine</option>
+                                        <option value="MD">Maryland</option>
+                                        <option value="MA">Massachusetts</option>
+                                        <option value="MI">Michigan</option>
+                                        <option value="NH">New Hampshire</option>
+                                        <option value="NJ">New Jersey</option>
+                                        <option value="NY">New York</option>
+                                        <option value="NC">North Carolina</option>
+                                        <option value="OH">Ohio</option>
+                                        <option value="PA">Pennsylvania</option>
+                                        <option value="RI">Rhode Island</option>
+                                        <option value="SC">South Carolina</option>
+                                        <option value="VT">Vermont</option>
+                                        <option value="VA">Virginia</option>
+                                        <option value="WV">West Virginia</option>
+                                    </optgroup>
+                                </select>
+
+                                <h6 class="mt-2 text-muted">Multiple Select</h6>
+
+                                <select class="select2 mb-3 select2-multiple" style="width: 100%" multiple="multiple" data-placeholder="Choose">
+                                    <optgroup label="Alaskan/Hawaiian Time Zone">
+                                        <option value="AK">Alaska</option>
+                                        <option value="HI">Hawaii</option>
+                                    </optgroup>
+                                    <optgroup label="Pacific Time Zone">
+                                        <option value="CA">California</option>
+                                        <option value="NV">Nevada</option>
+                                        <option value="OR">Oregon</option>
+                                        <option value="WA">Washington</option>
+                                    </optgroup>
+                                    <optgroup label="Mountain Time Zone">
+                                        <option value="AZ">Arizona</option>
+                                        <option value="CO">Colorado</option>
+                                        <option value="ID">Idaho</option>
+                                        <option value="MT">Montana</option>
+                                        <option value="NE">Nebraska</option>
+                                        <option value="NM">New Mexico</option>
+                                        <option value="ND">North Dakota</option>
+                                        <option value="UT">Utah</option>
+                                        <option value="WY">Wyoming</option>
+                                    </optgroup>
+                                    <optgroup label="Central Time Zone">
+                                        <option value="AL">Alabama</option>
+                                        <option value="AR">Arkansas</option>
+                                        <option value="IL">Illinois</option>
+                                        <option value="IA">Iowa</option>
+                                        <option value="KS">Kansas</option>
+                                        <option value="KY">Kentucky</option>
+                                        <option value="LA">Louisiana</option>
+                                        <option value="MN">Minnesota</option>
+                                        <option value="MS">Mississippi</option>
+                                        <option value="MO">Missouri</option>
+                                        <option value="OK">Oklahoma</option>
+                                        <option value="SD">South Dakota</option>
+                                        <option value="TX">Texas</option>
+                                        <option value="TN">Tennessee</option>
+                                        <option value="WI">Wisconsin</option>
+                                    </optgroup>
+                                    <optgroup label="Eastern Time Zone">
+                                        <option value="CT">Connecticut</option>
+                                        <option value="DE">Delaware</option>
+                                        <option value="FL">Florida</option>
+                                        <option value="GA">Georgia</option>
+                                        <option value="IN">Indiana</option>
+                                        <option value="ME">Maine</option>
+                                        <option value="MD">Maryland</option>
+                                        <option value="MA">Massachusetts</option>
+                                        <option value="MI">Michigan</option>
+                                        <option value="NH">New Hampshire</option>
+                                        <option value="NJ">New Jersey</option>
+                                        <option value="NY">New York</option>
+                                        <option value="NC">North Carolina</option>
+                                        <option value="OH">Ohio</option>
+                                        <option value="PA">Pennsylvania</option>
+                                        <option value="RI">Rhode Island</option>
+                                        <option value="SC">South Carolina</option>
+                                        <option value="VT">Vermont</option>
+                                        <option value="VA">Virginia</option>
+                                        <option value="WV">West Virginia</option>
+                                    </optgroup>
+                                </select>          
+                            </div>
+                        </div>
+                    </div>       
+                </div>
+                <div class="row">
+                    <div class="col-md-12 col-xl-4">
+                        <div class="card m-b-30">
+                            <div class="card-body">
+                                <h4 class="header-title mt-0">Switches</h4>
+                                <form class="mb-0">
+                                    <div class="switch">
+                                        <label>
+                                        <input type="checkbox" checked>
+                                        Wi-Fi
+                                        </label>
+                                    </div>
+                                    <div class="switch">
+                                        <label>
+                                        <input type="checkbox">
+                                        Bluetooth
+                                        </label>
+                                    </div>
+                                    <div class="switch">
+                                        <label>
+                                        <input type="checkbox" disabled>
+                                        This is disabled
+                                        </label>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12 col-xl-4">
+                        <div class="card m-b-30">
+                            <div class="card-body">
+                                <h4 class="header-title mt-0">Radios</h4>   
+                                <form class="mb-0">
+                                    <div class="radio">
+                                        <label>
+                                        <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+                                        Option one is this and that&mdash;be sure to include why it's great
+                                        </label>
+                                    </div>
+                                    <div class="radio">
+                                        <label>
+                                        <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+                                        Option two can be something else and selecting it will deselect option 
+                                        </label>
+                                    </div>
+                                    <div class="radio disabled">
+                                        <label>
+                                        <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3" disabled>
+                                        Option three is disabled
+                                        </label>
+                                    </div>
+                                    
+                                    <label class="radio-inline mr-2">
+                                        <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> 1
+                                    </label>
+                                    <label class="radio-inline mr-2">
+                                        <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> 2
+                                    </label>
+                                    <label class="radio-inline">
+                                        <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3"> 3
+                                    </label>   
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12 col-xl-4">
+                        <div class="card m-b-30">
+                            <div class="card-body">
+                                <h4 class="header-title mt-0">Checkboxes</h4>
+                                <form class="mb-0">  
+                                    <div class="checkbox">
+                                        <label>
+                                        <input type="checkbox"> Check me out
+                                        </label>
+                                    </div>   
+                                    <div class="checkbox">
+                                        <label>
+                                        <input type="checkbox" value="" checked>
+                                        I'm selected because I seem like the safe choice
+                                        </label>
+                                    </div>
+                                    <div class="checkbox disabled">
+                                        <label>
+                                        <input type="checkbox" value="" disabled>
+                                        Option is disabled because it is scary
+                                        </label>
+                                    </div>    
+                                    <label class="checkbox-inline mr-2">
+                                        <input type="checkbox" id="inlineCheckbox1" value="option1"> 1
+                                    </label>
+                                    <label class="checkbox-inline mr-2">
+                                        <input type="checkbox" id="inlineCheckbox2" value="option2"> 2
+                                    </label>
+                                    <label class="checkbox-inline">
+                                        <input type="checkbox" id="inlineCheckbox3" value="option3"> 3
+                                    </label>  
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- end row -->    
+
+            </div> <!-- end container -->
+        </div>
+        <!-- end wrapper -->
+
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12">
+                        © 2018 Urora by Mannatthemes.
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- End Footer -->
+
+
+       <!-- jQuery  -->
+       <script src="assets/js/jquery.min.js"></script>
+       <script src="assets/js/popper.min.js"></script>
+       <script src="assets/js/bootstrap-material-design.js"></script>
+       <script src="assets/js/modernizr.min.js"></script>
+       <script src="assets/js/detect.js"></script>
+       <script src="assets/js/fastclick.js"></script>
+       <script src="assets/js/jquery.slimscroll.js"></script>
+       <script src="assets/js/jquery.blockUI.js"></script>
+       <script src="assets/js/waves.js"></script>
+       <script src="assets/js/jquery.nicescroll.js"></script>
+       <script src="assets/js/jquery.scrollTo.min.js"></script>
+
+       <!-- Plugins js -->
+       <script src="assets/plugins/timepicker/moment.js"></script>
+       <script src="assets/plugins/timepicker/tempusdominus-bootstrap-4.js"></script>
+       <script src="assets/plugins/timepicker/bootstrap-material-datetimepicker.js"></script>
+       <script src="assets/plugins/clockpicker/jquery-clockpicker.min.js"></script>
+       <script src="assets/plugins/colorpicker/jquery-asColor.js"></script>
+       <script src="assets/plugins/colorpicker/jquery-asGradient.js"></script>
+       <script src="assets/plugins/colorpicker/jquery-asColorPicker.min.js"></script>
+       <script src="assets/plugins/select2/select2.min.js"></script>
+
+       <script src="assets/plugins/bootstrap-maxlength/bootstrap-maxlength.min.js"></script>
+       <script src="assets/plugins/bootstrap-touchspin/js/jquery.bootstrap-touchspin.min.js"></script>
+       <!-- Plugins Init js -->
+       <script src="assets/pages/form-advanced.js"></script>
+
+       <!-- App js -->
+       <script src="assets/js/app.js"></script>
+      
+    </body>
+</html>
