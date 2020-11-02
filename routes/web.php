@@ -15,7 +15,13 @@ Route::get('/administrador', function () {
 });
 Route::get('/administrador', 'administradorController@index')->name('administrador');
 
-
+Route::resource('viviendas', 'ViviendasController');
+Route::prefix('viviendas')->group(function() {
+    Route::post('/cambiarEstado', [
+        'as'   => 'viviendas.cambiarEstado',
+        'uses' => 'ViviendasController@cambiarEstado',
+    ]);
+});
 
 Route::resource('usuarios', 'UserController');
 Route::prefix('usuarios')->group(function() {
